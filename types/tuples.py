@@ -91,8 +91,12 @@
 #     ('Артур', '13', 5.8, 'Екатеринбург'),
 #     ('John', '13', 10, 'WinterFell')
 # )
-
-
+a = []
+for i in range(10000, 100000):
+    
+    if i%2==0 and sum(map(lambda x: int(x), list(str(i))))%4==0:
+        a.append(i)
+print(a)
 
 
 
